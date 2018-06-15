@@ -15,7 +15,7 @@ Requires: unbundle-python3
 Requires: unbundle-python
 BuildRequires : pbr
 BuildRequires : pip
-BuildRequires : python-dev
+
 BuildRequires : python3-dev
 BuildRequires : setuptools
 
