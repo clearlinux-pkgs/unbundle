@@ -4,7 +4,7 @@
 #
 Name     : unbundle
 Version  : 0.1.2
-Release  : 11
+Release  : 12
 URL      : https://github.com/clearlinux/unbundle/releases/download/v0.1.2/unbundle-0.1.2.tar.gz
 Source0  : https://github.com/clearlinux/unbundle/releases/download/v0.1.2/unbundle-0.1.2.tar.gz
 Summary  : UNKNOWN
