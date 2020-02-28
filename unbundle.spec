@@ -4,7 +4,7 @@
 #
 Name     : unbundle
 Version  : 0.1.6
-Release  : 22
+Release  : 23
 URL      : https://github.com/clearlinux/unbundle/releases/download/v0.1.6/unbundle-0.1.6.tar.gz
 Source0  : https://github.com/clearlinux/unbundle/releases/download/v0.1.6/unbundle-0.1.6.tar.gz
 Summary  : UNKNOWN
@@ -58,13 +58,15 @@ python3 components for the unbundle package.
 
 %prep
 %setup -q -n unbundle-0.1.6
+cd %{_builddir}/unbundle-0.1.6
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1569014443
+export SOURCE_DATE_EPOCH=1582906821
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
@@ -77,7 +79,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/unbundle
-cp LICENSE %{buildroot}/usr/share/package-licenses/unbundle/LICENSE
+cp %{_builddir}/unbundle-0.1.6/LICENSE %{buildroot}/usr/share/package-licenses/unbundle/8624bcdae55baeef00cd11d5dfcfa60f68710a02
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -92,7 +94,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/unbundle/LICENSE
+/usr/share/package-licenses/unbundle/8624bcdae55baeef00cd11d5dfcfa60f68710a02
 
 %files python
 %defattr(-,root,root,-)
