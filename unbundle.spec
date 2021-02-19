@@ -4,7 +4,7 @@
 #
 Name     : unbundle
 Version  : 0.1.6
-Release  : 27
+Release  : 28
 URL      : https://github.com/clearlinux/unbundle/releases/download/v0.1.6/unbundle-0.1.6.tar.gz
 Source0  : https://github.com/clearlinux/unbundle/releases/download/v0.1.6/unbundle-0.1.6.tar.gz
 Summary  : UNKNOWN
