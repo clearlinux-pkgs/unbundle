@@ -7,7 +7,7 @@
 #
 Name     : unbundle
 Version  : 1.0.0
-Release  : 39
+Release  : 40
 URL      : https://github.com/clearlinux/unbundle/archive/refs/tags/v1.0.0.tar.gz
 Source0  : https://github.com/clearlinux/unbundle/archive/refs/tags/v1.0.0.tar.gz
 Summary  : No detailed summary available
