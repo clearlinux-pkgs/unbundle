@@ -7,7 +7,7 @@
 #
 Name     : unbundle
 Version  : 1.1.0
-Release  : 41
+Release  : 42
 URL      : https://github.com/clearlinux/unbundle/archive/refs/tags/v1.1.0.tar.gz
 Source0  : https://github.com/clearlinux/unbundle/archive/refs/tags/v1.1.0.tar.gz
 Summary  : No detailed summary available
@@ -71,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1746029826
+export SOURCE_DATE_EPOCH=1746743534
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
