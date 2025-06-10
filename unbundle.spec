@@ -6,10 +6,10 @@
 # autospec commit: 6aaa12f
 #
 Name     : unbundle
-Version  : 1.1.2
-Release  : 44
-URL      : https://github.com/clearlinux/unbundle/archive/refs/tags/v1.1.2.tar.gz
-Source0  : https://github.com/clearlinux/unbundle/archive/refs/tags/v1.1.2.tar.gz
+Version  : 1.2.0
+Release  : 45
+URL      : https://github.com/clearlinux/unbundle/archive/refs/tags/v1.2.0.tar.gz
+Source0  : https://github.com/clearlinux/unbundle/archive/refs/tags/v1.2.0.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-3.0
@@ -65,15 +65,15 @@ python3 components for the unbundle package.
 
 
 %prep
-%setup -q -n unbundle-1.1.2
-cd %{_builddir}/unbundle-1.1.2
+%setup -q -n unbundle-1.2.0
+cd %{_builddir}/unbundle-1.2.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1749485387
+export SOURCE_DATE_EPOCH=1749516941
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
